@@ -271,6 +271,16 @@ def _send_wecom_message(user_id, content):
     # 实际发送通过企业微信 API 或连接器
     # 这里仅做日志记录
 
+@app.route('/debug')
+def debug():
+    return jsonify({
+        "corpid": WECOM_CORPID,
+        "token": WECOM_TOKEN,
+        "aes_key": WECOM_ENCODING_AES_KEY[:10] + "..." if WECOM_ENCODING_AES_KEY else "empty",
+        "corpid_len": len(WECOM_CORPID),
+        "token_len": len(WECOM_TOKEN),
+        "aes_key_len": len(WECOM_ENCODING_AES_KEY),
+    })
 
 # ---------- 主入口 ----------
 if __name__ == '__main__':
