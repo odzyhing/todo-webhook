@@ -40,11 +40,11 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 
 # 从环境变量读取配置
-WECOM_CORPID = os.environ.get('WECOM_CORPID', '')
-WECOM_SECRET = os.environ.get('WECOM_SECRET', '')
-WECOM_AGENTID = os.environ.get('WECOM_AGENTID', '')
-WECOM_TOKEN = os.environ.get('WECOM_TOKEN', '')
-WECOM_ENCODING_AES_KEY = os.environ.get('WECOM_ENCODING_AES_KEY', '')
+WECOM_CORPID = 'wwc1cbd6b8ce33e460'
+WECOM_SECRET = '567U0km_bnkiNgzGGxLebkBVah1uZC7Nj_m6W-kP12A'
+WECOM_AGENTID = '1000003'
+WECOM_TOKEN = 'todo123456'
+WECOM_ENCODING_AES_KEY = 'mfRaOIhbgFxn6iI75YONMyXieBiAHx4XKK3Ique3pPU'
 TENCENT_DOC_BOOK_ID = os.environ.get('TENCENT_DOC_BOOK_ID', '')
 TENCENT_DOC_SHEET_ID = os.environ.get('TENCENT_DOC_SHEET_ID', '')
 TARGET_USER_ID = os.environ.get('TARGET_USER_ID', '')
